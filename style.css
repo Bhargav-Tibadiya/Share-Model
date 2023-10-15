@@ -28,6 +28,7 @@
     flex-direction: column;
     border-radius: 15px;
     border: 2px solid #5f5f5f;
+    z-index: 5;
 }
 
 .box img {
@@ -57,4 +58,65 @@
     border: 2px solid #5f5f5f;
     width: 175px;
 }
+
+.circle1{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: aqua;
+    top: 50px;
+    left: 32%;
+    z-index: 2;
+    /* Taken from https://coolors.co/gradients */
+    background: hsla(238, 100%, 71%, 1);
+    background: linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#696EFF", endColorstr="#F8ACFF", GradientType=1 );
+    animation: slide1 10s ease infinite;
+}
+
+@keyframes slide1 {
+    0%{
+        left:32%;
+    }
+    50%{
+        left:37%;
+    }
+    100%{
+        left:32%;
+    }
+}
+
+.circle2{
+    position: absolute;
+    width: 325px;
+    height: 325px;
+    border-radius: 50%;
+    background-color: red;
+    bottom: 25px;
+    right: 32%;
+    z-index: 1;
+    background: hsla(254, 68%, 9%, 1);
+    /* Taken from https://coolors.co/gradients */
+    background: linear-gradient(90deg, hsla(254, 68%, 9%, 1) 0%, hsla(269, 97%, 37%, 1) 33%, hsla(320, 77%, 55%, 1) 66%, hsla(316, 41%, 93%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(254, 68%, 9%, 1) 0%, hsla(269, 97%, 37%, 1) 33%, hsla(320, 77%, 55%, 1) 66%, hsla(316, 41%, 93%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(254, 68%, 9%, 1) 0%, hsla(269, 97%, 37%, 1) 33%, hsla(320, 77%, 55%, 1) 66%, hsla(316, 41%, 93%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0E0725", endColorstr="#5C03BC", GradientType=1 );
+    animation: slide2 10s ease infinite;
+}
+
+@keyframes slide2 {
+    0%{
+        right:32%;
+    }
+    50%{
+        right:37%;
+    }
+    100%{
+        right:32%;
+    }
+}
+
 
