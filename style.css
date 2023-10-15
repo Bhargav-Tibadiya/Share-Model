@@ -33,3 +33,28 @@
 .box img {
     border-radius: 50%;
 }
+
+.box h1,h2{
+    padding: 15px 0;
+}
+
+.share-btns{
+    padding-top: 15px;
+    /* background: #24ffed; */
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.share-btns button{
+    color: white;
+    background: rgba(43, 43, 43, 0.5);
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 2px solid #5f5f5f;
+    width: 175px;
+}
+
