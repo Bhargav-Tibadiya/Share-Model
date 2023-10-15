@@ -29,6 +29,8 @@
     border-radius: 15px;
     border: 2px solid #5f5f5f;
     z-index: 5;
+    backdrop-filter: blur(15px);
+
 }
 
 .box img {
@@ -65,7 +67,7 @@
     height: 250px;
     border-radius: 50%;
     background-color: aqua;
-    top: 50px;
+    top: 85px;
     left: 32%;
     z-index: 2;
     /* Taken from https://coolors.co/gradients */
@@ -74,7 +76,9 @@
     background: -moz-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
     background: -webkit-linear-gradient(90deg, hsla(238, 100%, 71%, 1) 0%, hsla(295, 100%, 84%, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#696EFF", endColorstr="#F8ACFF", GradientType=1 );
-    animation: slide1 10s ease infinite;
+    animation: slide1 10s ease-in-out infinite;
+
+    box-shadow: 0 0 25px 15px hsla(238, 100%, 71%, 0.33);
 }
 
 @keyframes slide1 {
@@ -98,13 +102,14 @@
     bottom: 25px;
     right: 32%;
     z-index: 1;
-    background: hsla(254, 68%, 9%, 1);
     /* Taken from https://coolors.co/gradients */
-    background: linear-gradient(90deg, hsla(254, 68%, 9%, 1) 0%, hsla(269, 97%, 37%, 1) 33%, hsla(320, 77%, 55%, 1) 66%, hsla(316, 41%, 93%, 1) 100%);
-    background: -moz-linear-gradient(90deg, hsla(254, 68%, 9%, 1) 0%, hsla(269, 97%, 37%, 1) 33%, hsla(320, 77%, 55%, 1) 66%, hsla(316, 41%, 93%, 1) 100%);
-    background: -webkit-linear-gradient(90deg, hsla(254, 68%, 9%, 1) 0%, hsla(269, 97%, 37%, 1) 33%, hsla(320, 77%, 55%, 1) 66%, hsla(316, 41%, 93%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0E0725", endColorstr="#5C03BC", GradientType=1 );
-    animation: slide2 10s ease infinite;
+    background: hsla(148, 89%, 78%, 1);
+    background: linear-gradient(90deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(148, 89%, 78%, 1) 0%, hsla(210, 81%, 22%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#95F9C3", endColorstr="#0B3866", GradientType=1 );
+    animation: slide2 20s ease-in-out infinite;
+    box-shadow: 0 0 25px 15px hsla(0, 0%, 80%, 0.33);
 }
 
 @keyframes slide2 {
@@ -112,7 +117,7 @@
         right:32%;
     }
     50%{
-        right:37%;
+        right:42%;
     }
     100%{
         right:32%;
