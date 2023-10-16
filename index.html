@@ -16,13 +16,51 @@
             <h1>Scaramouche</h1>
             <h2>6th Fatui Harbringer</h2>
             <div class="share-btns">
-                <button> <i class="fa-solid fa-share" style="color: #ffffff;"></i> Share Profile</button>
-                <button>Follow Me</button>
+                <button onclick="openModal()"> <i class="fa-solid fa-share" style="color: #ffffff;"></i> Share Profile</button>
+                <button><a href="https://twitter.com/Bhxrgxvv"><i class="fa fa-twitter" aria-hidden="true"></i>Follow Me </a></button>
             </div>
         </div>
     </div>
 
+    <!-- Modal Component -->
+    <div class="modal">
+        <div class="modal-header">
+            <h1>Share My Profile</h1>
+            <div>
+            <i onclick="closeModal()" class="fa-solid fa-xmark close"></i>
+            </div>
+        </div>
+
+
+        <div>
+
+            <h3>Share this via</h3>
+
+            
+            <div class="icon-container">
+            <a href="#" class="icon" id="facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="icon" id="twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" class="icon" id="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" class="icon" id="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="#" class="icon" id="telegram">
+                <i class="fa-brands fa-telegram"></i>
+            </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" onclick="closeModel()"></div>
+
     <script src="https://kit.fontawesome.com/e7d784d955.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
