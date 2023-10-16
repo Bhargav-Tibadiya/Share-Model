@@ -125,3 +125,35 @@
 }
 
 
+.circle3{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+    background-color: red;
+    bottom: 200px;
+    left: 15%;
+    z-index: 1;
+    /* Taken from https://coolors.co/gradients */
+    background: hsla(286, 48%, 91%, 1);
+    background: linear-gradient(90deg, hsla(286, 48%, 91%, 1) 0%, hsla(340, 73%, 75%, 1) 50%, hsla(263, 58%, 45%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(286, 48%, 91%, 1) 0%, hsla(340, 73%, 75%, 1) 50%, hsla(263, 58%, 45%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(286, 48%, 91%, 1) 0%, hsla(340, 73%, 75%, 1) 50%, hsla(263, 58%, 45%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EEDDF3", endColorstr="#EE92B1", GradientType=1 );
+    animation: shape3 5s ease-in-out infinite;
+    box-shadow: 0 0 25px 15px hsla(0, 0%, 80%, 0.33);
+}
+
+@keyframes shape3 {
+    0%{
+        border-radius: 5%;
+    }
+    50%{
+        border-radius: 50%;
+    }
+    100%{
+        border-radius: 5%;
+    }
+}
+
+
